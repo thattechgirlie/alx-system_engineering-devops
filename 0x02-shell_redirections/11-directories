@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -mindepth 1type d | wc -1
+find . -type d -not -name '_' | wc -1
