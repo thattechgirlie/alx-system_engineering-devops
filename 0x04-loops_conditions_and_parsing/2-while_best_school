@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Bash script that displays Best School 10times.
+#Bash script that displays "Best School" 10times.
 
 count = 0
 while [$count - lt 10]
