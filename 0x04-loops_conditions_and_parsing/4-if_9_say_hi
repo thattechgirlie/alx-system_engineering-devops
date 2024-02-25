@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # Bash script that displays "Best School" 10 times but for 9th "Best School" then "Hi" on new line
 
-count = 0
-while [$count -lt 10]
+count=0
+while [ $count -lt 10 ]
 do
-	if [$count -eq 9]
+	if [ $count -eq 9 ]
 	then
 		echo "Hi"
 	fi
 	echo "Best School"
-	((count++))
+	(( count++ ))
 done

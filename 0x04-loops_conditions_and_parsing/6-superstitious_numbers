@@ -4,8 +4,8 @@
 #	displays 9 then "bad luck from Japan" for 9th iteration
 #	displays 17 then "bad luck from Italy" for 17th iteration
 
-count = 1
-while [$count -le 20]
+count=1
+while [ $count -le 20 ]
 do
 	echo "$count"
 	case $count in
@@ -13,5 +13,5 @@ do
 		"9") echo "bad luck from Japan";;
 		"17") echo "bad luck from Italy";;
 	esac
-	((count++))
+	(( count++ ))
 done
