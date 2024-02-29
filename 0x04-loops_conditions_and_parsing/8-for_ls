@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Bash script that displays current dir in list format and only 1st part of name after first dash is displayed
 
-list = $(ls)
+list=$(ls)
 for a in $list; do
 	echo "$a" | cut -d '-' -f2
 done
