@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Give me a page
+# start apache server
 
 service apache2 start
