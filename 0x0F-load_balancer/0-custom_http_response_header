@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#track which web server is answering our HTTP requests
+
+sudo apt-get update
+sudo apt-get -y install nginx
+sudo service nginx start
+sudo sed -i "/http {/a\         add_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
+echo "It is time!" | sudo tee /usr/share/nginx/html/index.html
+sudo service nginx restart
