@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Using what you did for task 0
+#make your fix short and sweet
+
+service nginx start
+curl 0:80
+service nginx status | grep "nginx is not running"
